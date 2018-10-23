@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,.87);
+}
+
+#cart {
+    max-width: 680px;
+    margin: 20px auto;
+    background: #8080801c;
+    padding: 40px;
+}
+
+#cart > h2 {
+    margin-bottom: 10px;
+}
+
+#cart a {
+    color: #747474;
+    text-decoration: none;
+}
+
+.product-item {
+    border-bottom: 2px solid #747474;
+    height: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #747474;
+    border-bottom: none;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.image .remove {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: #c20808;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.image img {
+    width: 60px;
+    height: 60px;
+}
+
+.decrease, .increase {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #747474;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.count {
+    margin: 10px 0;
+}
+
+.total-sum span {
+    font-weight: bold;
+}
+
+.total {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.empty {
+    margin: 40px 0;
+}
+
+.count > span {
+    margin: 0 10px;
+}
+
+
+
+@media (max-width: 420px) {
+
+	html, body {
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    #cart {
+        padding: 40px 10px;
+    }
+
+}
